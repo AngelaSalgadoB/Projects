@@ -6,7 +6,7 @@ from sqlalchemy import create_engine
 host_name='localhost'
 user_name='hdi' 
 user_password='hdi'
-data_base_name='sustainable_development'
+data_base_name='salaries'
 def get_connection():
     connection = create_engine("mysql+pymysql://{user}:{pw}@{host}/{db}"
 				.format(host=host_name,db=data_base_name, user=user_name, pw=user_password))
